@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Node JS Blog Renderer</title>
+    <title>Blogs - Node JS Blog Renderer</title>
 
     <style>
       body {
@@ -32,60 +32,43 @@
 
       .card {
         border: none;
+        background-color: rgb(240, 240, 240);
+        transition: all ease-in-out 300ms;
+      }
+
+      .card:hover {
+        background-color: #fff;
+        transition: all ease-in-out 300ms;
       }
     </style>
   </head>
   <body>
     <div class="container bg-light p-5">
       <div class="row text-center">
-       <div class="col-12">
-        <h1>Node JS, Markdown Blog Renderer</h1>
+      <div class="col-12">
+        <h1>Blogs</h1>
         <p class="p-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque
           quia. Quasi laborum minima blanditiis corrupti inventore modi tenetur
           error eligendi molestias consequatur! Perspiciatis, cumque?
         </p>
-        <a class="btn btn-lg btn-primary px-4" href="/blogs">Blogs</a>
-       </div>
+      </div>
       </div>
     </div>
 
     <div class="container text-center py-3">
-      <h2>Why use this ?</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <% for (blog of blogs) { %>
         <div class="col">
           <div class="card text-center h-100">
             <div class="card-body">
-              <h3 class="card-title">Fast by default ⚡️</h3>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <h3 class="card-title"><%= blog.title %></h3>
+              <p class="card-text"><%= blog.des %></p>
             </div>
+            <a class="stretched-link" href="/blogs/<%= blog.url %>"></a>
           </div>
         </div>
-        <div class="col">
-          <div class="card text-center h-100">
-            <div class="card-body">
-              <h3 class="card-title">Fully Customisable</h3>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center h-100">
-            <div class="card-body">
-              <h3 class="card-title">Fast by default ⚡️</h3>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
+        <% } %>
       </div>
     </div>
 

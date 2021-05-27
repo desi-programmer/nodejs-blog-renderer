@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 // Blog route
 // resides in controller/blogs.js
-// app.use('/blogs', require('./controller/blogs')); 
+app.use('/blogs', require('./controller/blogs')); 
 
 // 404 route
 app.use('*', (req, res) => {
