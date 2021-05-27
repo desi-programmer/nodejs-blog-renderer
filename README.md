@@ -6,6 +6,8 @@ Gives you a complete control of your backend and you can use it or deploy it whe
 # Performace
 ### Blog Rendering Time
 ![Render  Time](screenshots/blog-render-time.png)
+### Light House Performance
+![Render  Time](screenshots/light_house_performance.png)
 
 ### Note : The Blog used is [Flutter Pdf](content/flutter-pdf.md)
 
