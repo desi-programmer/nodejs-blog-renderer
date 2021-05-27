@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "new": "node blogrenderer/create.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "express": "^4.17.1",
     "gray-matter": "^4.0.3",
     "markdown-it": "^12.0.6",
-    "markdown-it-attrs": "^4.0.0"
+    "markdown-it-attrs": "^4.0.0",
+    "readline-sync": "^1.4.10"
   }
 }
