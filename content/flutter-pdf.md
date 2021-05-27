@@ -7,11 +7,8 @@ updated : 31/05/2021
 style : /static/css/blogStyle/lighttheme.css
 highlightTheme : https://www.desiprogrammer.com/static/highlight/styles/atom-one-light.css
 highlight : https://www.desiprogrammer.com/static/highlight/highlight-dart.pack.js
-
-# For seo
-# remeember title description are also used in that 
-url : 
-image : 
+url : https://desiprogrammer.com/blogs/flutter-pdf
+image : https://desiprogrammer.com/static/metaImages/flutter-pdf.png
 ---
 
 
