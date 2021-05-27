@@ -4,6 +4,7 @@ A Node js based Markdown Blog renderer or in Simple terms a static Site Generato
 Gives you a complete control of your backend and you can use it or deploy it wherever you want. Also it gives almost 100 on Google's Lighthouse for Seo, performance and Responsiveness.
 
 # Performace
+
 # Blog Rendering Time
 ![Render  Time](screenshots/blog-render-time.png)
 ## Light House Performance ( on desktop )
@@ -12,6 +13,16 @@ Gives you a complete control of your backend and you can use it or deploy it whe
 ## Light House Performance ( on mobile )
 
 ![Render  Time](screenshots/light_house_performance_mobile.png)
+
+### Note : The Blog used is [Flutter Pdf](content/flutter-pdf.md)
+---
+## OG and Meta Tags Preview 
+
+#### Useful when you share you content 
+
+#### Checked at [opengraph](https://www.opengraph.xyz/)
+
+![Social Share Preview](screenshots/og_preview_social_sites.png)
 
 ### Note : The Blog used is [Flutter Pdf](content/flutter-pdf.md)
 
