@@ -4,17 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/desi-programmer/nodejs-blog-renderer.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Desi programmer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/desi-programmer/nodejs-blog-renderer/issues"
   },
-  "homepage": "https://github.com/desi-programmer/nodejs-blog-renderer#readme"
+  "homepage": "https://github.com/desi-programmer/nodejs-blog-renderer#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": "2500",
+    "watch": [
+      "*",
+      "content/"
+    ],
+    "ext": "js,json,md,ejs"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
 }
