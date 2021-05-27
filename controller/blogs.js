@@ -1,4 +1,16 @@
 const router = require("express").Router();
+const path = require("path");
+const performance = require("perf_hooks").performance;
+var md = require("markdown-it")();
+var markdownItAttrs = require("markdown-it-attrs");
+const matter = require("gray-matter");
+
+md.use(markdownItAttrs, {
+  // optional, these are default options
+  leftDelimiter: "{",
+  rightDelimiter: "}",
+  allowedAttributes: [], // empty array = all attributes are allowed
+});
 
 var blogs = [
     {
@@ -6,7 +18,7 @@ var blogs = [
       url: "flutter-pdf",
       des: "A Code snippet about viewing PDF files in flutter that could be fetched from either the internet from internal storage or can even be compiled with the assets, also we will see how we can generate a PDF from a flutter application and then save it.",
       lang: "flutter",
-      file: "content/flutter-pdf.md",
+      file: "../content/flutter-pdf.md",
     },
     {
       title: "Flutter App Ideas To Code And Excel In Flutter",
@@ -20,7 +32,7 @@ var blogs = [
       url: "nodejs-express-google-authentication",
       des: "Another Blog",
       lang: "nodejs",
-      file: "blogs/nodejs-express-google-authentication",
+      file: "content/nodejs-express-google-authentication",
     },
   ];
 
