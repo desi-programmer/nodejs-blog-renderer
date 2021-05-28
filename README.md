@@ -5,7 +5,7 @@ Gives you a complete control of your backend and you can use it or deploy it whe
 
 # Contents
 ## [Performance](#performance)
-## [How to use](#use)
+## [How to use](#how-to-use)
 
 # Performace
 
