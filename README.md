@@ -3,6 +3,10 @@
 A Node js based Markdown Blog renderer or in Simple terms a static Site Generator.
 Gives you a complete control of your backend and you can use it or deploy it wherever you want. Also it gives almost 100 on Google's Lighthouse for Seo, performance and Responsiveness.
 
+# Contents
+## [Performance](#performance)
+## [How to use](#use)
+
 # Performace
 
 # Blog Rendering Time
@@ -25,6 +29,26 @@ Gives you a complete control of your backend and you can use it or deploy it whe
 ![Social Share Preview](screenshots/og_preview_social_sites.png)
 
 ### Note : The Blog used is [Flutter Pdf](content/flutter-pdf.md)
+
+# How to Use
+
+Clone the repository
+
+```bash
+git clone https://github.com/desi-programmer/nodejs-blog-renderer
+```
+
+Create a new Blog
+
+```bash
+npm run create
+```
+Run the Server
+
+```bash
+npm start
+```
+
 
 # Dependencies
     - **gray-matter** to get all the blog information from the md file
