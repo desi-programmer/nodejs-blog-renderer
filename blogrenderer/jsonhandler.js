@@ -23,7 +23,7 @@ module.exports.getBlogs = function (cb) {
       const obj = JSON.parse(fileData);
       return cb && cb(null, obj);
     } catch (err) {
-        return cb && cb(err);
+      return cb && cb(err);
     }
   });
 };
