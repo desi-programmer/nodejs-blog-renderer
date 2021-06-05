@@ -5,8 +5,8 @@ lead: This is some lead for the blog
 written : 27/05/2021
 updated : 31/05/2021
 style : /static/css/blogStyle/lighttheme.css
-highlightTheme : https://www.desiprogrammer.com/static/highlight/styles/atom-one-light.css
-highlight : https://www.desiprogrammer.com/static/highlight/highlight-dart.pack.js
+highlightTheme : /static/highlight/styles/atom-one-dark.css
+highlight : /static/highlight/highlight-dart.pack.js
 url : https://desiprogrammer.com/blogs/flutter-pdf
 image : https://desiprogrammer.com/static/metaImages/flutter-pdf.png
 ---
