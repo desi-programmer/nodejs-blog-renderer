@@ -45,19 +45,26 @@
   <body>
     <div class="container bg-light p-5">
       <div class="row text-center">
-      <div class="col-12">
-        <h1>Blogs</h1>
-        <p class="p-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, atque
-          quia. Quasi laborum minima blanditiis corrupti inventore modi tenetur
-          error eligendi molestias consequatur! Perspiciatis, cumque?
-        </p>
-      </div>
+        <div class="col-12">
+          <h1>Blogs</h1>
+          <p class="p-3">
+            Displays a list of blogs, which is grabbed from blogs.json. But you
+            can generate a list from your server or however you like populate
+            here. The design is bare minimum, hence leaving it upto you , to
+            change it.
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="container text-center py-3">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div
+        class="
+          row row-cols-1 row-cols-md-2 row-cols-lg-3
+          g-4
+          justify-content-center
+        "
+      >
         <% for (blog of blogs) { %>
         <div class="col">
           <div class="card text-center h-100">

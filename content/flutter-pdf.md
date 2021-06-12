@@ -6,6 +6,7 @@ written : 27/05/2021
 updated : 31/05/2021
 style : /static/css/blogStyle/lighttheme.css
 highlightTheme : /static/highlight/styles/atom-one-dark.css
+highlightLightTheme : /static/highlight/styles/atom-one-light.css
 highlight : /static/highlight/highlight-dart.pack.js
 url : https://desiprogrammer.com/blogs/flutter-pdf
 image : https://desiprogrammer.com/static/metaImages/flutter-pdf.png

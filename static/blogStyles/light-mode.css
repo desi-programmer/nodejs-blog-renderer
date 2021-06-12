@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+
+body {
+  font-family: "Sen", sans-serif;
+  font-size: larger;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+pre,
+code {
+  font-family: "Fira Mono", monospace;
+}
+
+/* Footer  */
+.footer{
+    background-color: #fff;
+    color: #1c1c1c;
+}
+
+/* Navbar  */
+
+.nav-link , .navbar-brand {
+    color: #1c1c1c;
+}
+.navbar {
+    background-color: #fff;
+    color: #1c1c1c;
+}

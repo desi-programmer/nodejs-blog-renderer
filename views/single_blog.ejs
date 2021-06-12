@@ -38,27 +38,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet" />
   <!-- highlight theme  -->
-  <link href="<%= info.highlightTheme %>" rel="stylesheet" />
-
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
-
-    body {
-      font-family: "Sen", sans-serif;
-      font-size: larger;
+  <link id="highlightTheme" href="<%= info.highlightTheme %>" rel="stylesheet" />
+  <link id="theme" rel="stylesheet" href="/static/blogStyles/light-mode.css">
+  <script>
+    var mode = localStorage.getItem('mode');
+    if (mode) {
+        const themeStylesheet = document.getElementById('theme');
+        const highlightStylesheet = document.getElementById('highlightTheme');
+        if (mode == "light") {
+            themeStylesheet.href = '/static/blogStyles/light-mode.css';
+            // remove this line if you dont want to change highlight theme to light
+            highlightStylesheet.href = '<%= info.highlightLightTheme %>';
+        } else {
+            themeStylesheet.href = '/static/blogStyles/dark-mode.css';
+            // remove this line if you dont want to change highlight theme to light
+            highlightStylesheet.href = '<%= info.highlightTheme %>';
+        }
     }
-
-    h1,
-    h2,
-    h3 {
-      font-weight: 700;
-    }
-
-    pre,
-    code {
-      font-family: "Fira Mono", monospace;
-    }
-  </style>
+</script>
 </head>
 
 <body>
@@ -71,6 +68,7 @@
           <h1>
             <%= info.title %>
           </h1>
+          <button id="theme-toggle">Turn on the Lights 🌞</button>
           <hr />
           <%- blogData %>
         </div>
@@ -85,6 +83,33 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+                    // localStorage.setItem('mode','dark');
+
+                    const themeStylesheet = document.getElementById('theme');
+                    const themeToggle = document.getElementById('theme-toggle');
+        const highlightStylesheet = document.getElementById('highlightTheme');
+                    themeToggle.addEventListener('click', () => {
+                        // if it's light -> go dark
+                        if (themeStylesheet.href.includes('light')) {
+                            themeStylesheet.href = '/static/blogStyles/dark-mode.css';
+                            // remove this line if you dont want to change highlight theme to light
+            highlightStylesheet.href = '<%= info.highlightTheme %>';
+                            themeToggle.innerText = 'Turn the Lights on 🌞';
+                            localStorage.setItem('mode', 'dark');
+                        } else {
+                            // if it's dark -> go light
+                            themeStylesheet.href = '/static/blogStyles/light-mode.css';
+                            // remove this line if you dont want to change highlight theme to light
+            highlightStylesheet.href = '<%= info.highlightLightTheme %>';
+                            themeToggle.innerText = 'Turn off the Lights 🌚';
+                            localStorage.setItem('mode', 'light');
+
+                        }
+                    })
+                })
+        </script>
 
 </body>
 
