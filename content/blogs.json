@@ -1,8 +1,8 @@
 [
-  {
-    "title": "Flutter PDF - Create Pdf and Read From Internet, Storage or Asset",
-    "url": "flutter-pdf",
-    "description": "A Code snippet about viewing PDF files in flutter that could be fetched from either the internet from internal storage or can even be compiled with the assets, also we will see how we can generate a PDF from a flutter application and then save it.",
-    "file": "../content/flutter-pdf.md"
-  }
+    {
+        "title": "How to use this ?",
+        "url": "how-to-use-this",
+        "description": "A blog on how to use this.",
+        "file": "../content/how-to-use-this.md"
+    }
 ]
